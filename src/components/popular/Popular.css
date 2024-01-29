@@ -1,0 +1,20 @@
+.popular{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    height: 90vh;
+}
+
+.popular h1{
+    color:#171717;
+    font-size: 50px;
+    font-weight: 600;
+    border-bottom: 3px solid #ff4141; /* You can adjust the color and thickness as needed */
+}
+
+.popular-item{
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+}
