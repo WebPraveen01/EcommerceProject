@@ -10,6 +10,7 @@ const Product = () => {
     return(
      <div>
       <ProductDisplay product ={product}/>
+      <h1>This is product components</h1>
      </div>
     )
 }
