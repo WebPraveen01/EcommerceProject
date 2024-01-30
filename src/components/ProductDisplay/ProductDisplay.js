@@ -4,7 +4,7 @@ import star_icon from "../assets/star_icon.png";
 import star_dull_icon from "../assets/star_dull_icon.png";
 
 const ProductDisplay = (props) => {
-  const { product } = props;
+  const { product,addToCart } = props;
 
   return (
     <div className="productdisplay">
@@ -54,7 +54,7 @@ const ProductDisplay = (props) => {
             <div>XXL</div>
           </div>
         </div>
-        <button>Add to Cart</button>
+        <button onClick={()=>{addToCart(product)}}>Add to Cart</button>
         <p className="productdisplay-right-category"><span>Category: </span>Women, T-Shirts, Crop Top</p>
         <p className="productdisplay-right-category"><span>Tags: </span>Mordern, Latest</p>
       </div>
