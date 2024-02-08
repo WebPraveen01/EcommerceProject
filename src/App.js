@@ -9,6 +9,7 @@ import men_banner from './components/assets/banner_mens.png';
 import women_banner from './components/assets/banner_women.png';
 import kids_banner from './components/assets/banner_kids.png';
 import LoginSignUp from "./pages/LoginSignUp";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Shop />} />
-          <Route path="/login" element={<LoginSignUp />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/loginsignup" element={<LoginSignUp />} />
           <Route path="/mens" element={<ShopCategory banner={men_banner} category="men" />} />
           <Route path="/womens" element={<ShopCategory banner={women_banner} category="women" />} />
           <Route path="/kids" element={<ShopCategory banner={kids_banner} category="kid" />} />
